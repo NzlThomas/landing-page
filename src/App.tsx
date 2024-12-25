@@ -21,7 +21,7 @@ function App() {
           <section className='backgroundC'>
 
           <div className='image-text'>
-          <p className='desc-text'>La famille va bientôt s'agrandir !</p>
+          <p className='desc-text'>La famille va bientôt s'agrandir, félicitations en avance !</p>
           <img src='../public/baby.png' alt='Silhouette de bébé.' className='baby-pic'/>
           </div>
           <div className='coupon'>
@@ -34,7 +34,7 @@ le code BABY404 !
           <div className='advice'>
             <p >Les parents les conseillent
             fortement :</p>
-            <SlArrowDown color='white' size={40} className='arrow'/>
+            <SlArrowDown color='white' size={40} className='arrow' strokeWidth={40}/>
             </div>
             
           </section>
@@ -55,10 +55,13 @@ le code BABY404 !
               <button type='button' onClick={handleClick}>Ajouter au panier</button>
               </div>
 
-              <button type='button' onClick={handleCatalogueClick}>Voir catalogue complet</button>
+              <button type='button' onClick={handleCatalogueClick} className='bottom-button'>Voir catalogue complet</button>
             
           </div>
         </body>
+        <footer>
+          <p>© 2024 Crew 404 Tous droits réservés.</p>
+        </footer>
       </div>
     </>
   )
