@@ -1,33 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { SlArrowDown } from "react-icons/sl";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <header className='header'>
+          <p>Crew 404</p>
+        </header>
+        <body>
+          <section className='backgroundC'>
+
+          <div className='image-text'>
+          <p className='desc-text'>La famille va bientôt s'agrandir !</p>
+          <img src='../public/baby.png' alt='Silhouette de bébé.' className='baby-pic'/>
+          </div>
+          <div className='coupon'>
+            <p>
+            Pour fêter cela, obtenez 20% de
+réduction sur notre catalogue avec
+le code BABY404 !
+            </p>
+            <SlArrowDown color='white' size={40}/>
+          </div>
+          </section>
+          <div className='shop'>
+            <p>Les parents les conseillent
+            fortement :</p>
+              <div>
+              <img />
+              <p>Casque antibruit</p>
+              </div>
+              <div>
+              <img />
+              <p>Infusions sommeil</p>
+              </div>
+              <button type='button'>Voir catalogue complet</button>
+            
+          </div>
+        </body>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
