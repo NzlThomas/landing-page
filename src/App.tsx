@@ -3,6 +3,14 @@ import { SlArrowDown } from "react-icons/sl";
 
 function App() {
 
+ const handleClick = () => {
+  alert("Quel panier d'ailleurs ?")
+  }
+
+  const handleCatalogueClick = () => {
+    alert("Si y a pas de panier y a pas de catalogue, 2 articles c'était le max pour mon inspiration.")
+  }
+
   return (
     <>
       <div>
@@ -22,21 +30,32 @@ function App() {
 réduction sur notre catalogue avec
 le code BABY404 !
             </p>
-            <SlArrowDown color='white' size={40}/>
           </div>
+          <div className='advice'>
+            <p >Les parents les conseillent
+            fortement :</p>
+            <SlArrowDown color='white' size={40} className='arrow'/>
+            </div>
+            
           </section>
           <div className='shop'>
-            <p>Les parents les conseillent
-            fortement :</p>
-              <div>
-              <img />
+              <div className='card'>
+
+              <img src='../public/casque.png' className='article'/>
               <p>Casque antibruit</p>
+              <p>49,99 €</p>
+              <button type='button' onClick={handleClick}>Ajouter au panier</button>
+
               </div>
-              <div>
-              <img />
+
+              <div className='card'>
+              <img src='../public/infusion.png' className='article'/>
               <p>Infusions sommeil</p>
+              <p>4,99 €</p>
+              <button type='button' onClick={handleClick}>Ajouter au panier</button>
               </div>
-              <button type='button'>Voir catalogue complet</button>
+
+              <button type='button' onClick={handleCatalogueClick}>Voir catalogue complet</button>
             
           </div>
         </body>
