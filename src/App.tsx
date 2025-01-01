@@ -4,7 +4,7 @@ import { SlArrowDown } from "react-icons/sl";
 function App() {
 
  const handleClick = () => {
-  alert("Quel panier d'ailleurs ?")
+  alert("Quel panier ?")
   }
 
   const handleCatalogueClick = () => {
@@ -15,7 +15,7 @@ function App() {
     <>
       <div>
         <header className='header'>
-          <p>Crew 404</p>
+          <p>Crew 404 - Baby incoming</p>
         </header>
         <body>
           <section className='backgroundC'>
@@ -55,8 +55,11 @@ le code BABY404 !
               <button type='button' onClick={handleClick}>Ajouter au panier</button>
               </div>
 
-              <button type='button' onClick={handleCatalogueClick} className='bottom-button'>Voir catalogue complet</button>
+              
             
+          </div>
+          <div id='catalogue'>
+          <button type='button' onClick={handleCatalogueClick} className='bottom-button'>Voir catalogue complet</button>
           </div>
         </body>
         <footer>
