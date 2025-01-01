@@ -1,5 +1,6 @@
 import './App.css'
 import { SlArrowDown } from "react-icons/sl";
+import baby from "./assets/baby.png";
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
 
           <div className='image-text'>
           <p className='desc-text'>La famille va bientôt s'agrandir, félicitations en avance !</p>
-          <img src='../public/baby.png' alt='Silhouette de bébé.' className='baby-pic'/>
+          <img src={baby} alt='Silhouette de bébé.' className='baby-pic'/>
           </div>
           <div className='coupon'>
             <p>
