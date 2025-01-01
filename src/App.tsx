@@ -41,7 +41,7 @@ le code BABY404 !
           <div className='shop'>
               <div className='card'>
 
-              <img src='../public/casque.png' className='article'/>
+              <img src='../public/casque.png' className='article' alt='Casque antibruit'/>
               <p>Casque antibruit</p>
               <p>49,99 €</p>
               <button type='button' onClick={handleClick}>Ajouter au panier</button>
@@ -49,7 +49,7 @@ le code BABY404 !
               </div>
 
               <div className='card'>
-              <img src='../public/infusion.png' className='article'/>
+              <img src='../public/infusion.png' className='article' alt='Infusion pour le sommeil'/>
               <p>Infusions sommeil</p>
               <p>4,99 €</p>
               <button type='button' onClick={handleClick}>Ajouter au panier</button>
